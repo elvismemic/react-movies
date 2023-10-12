@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.css'; //global
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Simple from './Simple';
@@ -10,6 +10,7 @@ import Events from './Events';
 import ConditionalsIf from './ConditionalsIf';
 import MapExample from './MapExample';
 import ConditionalsIfSeveralComponents from './ConditionalsIfSeveralComponents';
+import CSSExample from './CSSExample';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -22,7 +23,8 @@ root.render(
     {/* <Events></Events> */}
     {/* <ConditionalsIf></ConditionalsIf> */}
     {/* <MapExample></MapExample> */}
-    <ConditionalsIfSeveralComponents></ConditionalsIfSeveralComponents>
+    {/* <ConditionalsIfSeveralComponents></ConditionalsIfSeveralComponents> */}
+    <CSSExample></CSSExample>
   </React.StrictMode>
 );
 
