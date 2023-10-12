@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Simple from "./Simple";
 import SelectNumber from "./SelectNumber";
+import ProjectContent from "./ProjectContent";
 
 export default function ConditionalsIfSeveralComponents(){
     const [selectedRate, setSelectedRate] = useState(1);
@@ -33,11 +34,23 @@ export default function ConditionalsIfSeveralComponents(){
             {/* <SelectNumber maxValue={5} onSelected={setSelectedRate}></SelectNumber> */}
             
             {/* Use default value */}
-            <SelectNumber onSelected={setSelectedRate}></SelectNumber>
+            <SelectNumber 
+            selectContent={(value) => `Select ${value}`}
+            onSelected={setSelectedRate}></SelectNumber>
 
-            <div>
+            {/* <div>
                 {displayResult()}
+            </div> */}
+            <div>
+                <ProjectContent bootomPart={<><span>This is the end</span></>}>
+                    {/* <button>This a button as a parameter</button> */}
+                    <>
+                        <Simple></Simple>
+                        <button onClick={() => console.log('I was clicked')}>My button</button>
+                    </>
+                </ProjectContent>
             </div>
+
         </>
 
     )
