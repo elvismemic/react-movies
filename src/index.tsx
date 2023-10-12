@@ -11,12 +11,15 @@ import ConditionalsIf from './ConditionalsIf';
 import MapExample from './MapExample';
 import ConditionalsIfSeveralComponents from './ConditionalsIfSeveralComponents';
 import CSSExample from './CSSExample';
+import DemoExamples from './DemoExamples';
+import ErrorExample from './ErrorExample';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
+    {/* <App></App> */}
     {/* <Simple /> */}
     {/* <Expressions></Expressions> */}
     {/* <Conditionals></Conditionals> */}
@@ -24,7 +27,9 @@ root.render(
     {/* <ConditionalsIf></ConditionalsIf> */}
     {/* <MapExample></MapExample> */}
     {/* <ConditionalsIfSeveralComponents></ConditionalsIfSeveralComponents> */}
-    <CSSExample></CSSExample>
+    {/* <CSSExample></CSSExample> */}
+    {/* <DemoExamples></DemoExamples> */}
+    <ErrorExample></ErrorExample>
   </React.StrictMode>
 );
 
